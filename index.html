@@ -3,22 +3,52 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1C Invoices — Политика конфиденциальности</title>
+<title>1C Invoices — приложение для отправки счетов</title>
 <style>
 body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; }
-h1 { font-size: 26px; }
-a { color: #1a73e8; }
+h1 { font-size: 28px; }
+h2 { font-size: 20px; margin-top: 30px; }
 .card { background: #f8f9fa; border: 1px solid #dadce0; border-radius: 8px; padding: 16px 20px; margin-top: 24px; }
+ul { padding-left: 20px; }
+.footer { margin-top: 36px; font-size: 14px; color: #555; }
 </style>
 </head>
 <body>
 <h1>1C Invoices</h1>
-<p>Приложение для отправки счетов через Gmail API.</p>
+<p><strong>1C Invoices</strong> — настольное приложение, которое отправляет счета (invoice) вашим клиентам
+от вашего имени через электронную почту Gmail. Приложение создано для бухгалтеров и предпринимателей,
+которые выставляют счета из 1С и хотят отправлять их клиентам по электронной почте автоматически,
+без ручного копирования писем.</p>
+
+<h2>Как это работает</h2>
+<ul>
+<li>Приложение формирует письмо со счётом и вложенным PDF-файлом.</li>
+<li>Через Gmail API оно отправляет письмо с вашего адреса Gmail получателю (вашему клиенту).</li>
+<li>Письмо попадает в папку «Отправленные» вашего аккаунта Gmail — вы видите каждую отправку.</li>
+</ul>
+
+<h2>Какие данные и сервисы Google используются</h2>
+<ul>
+<li>Сервис: <strong>Gmail API</strong> (api.gmail.com).</li>
+<li>Запрашиваемый объём доступа: <em>https://www.googleapis.com/auth/gmail.compose</em> —
+только создание и отправка писем.</li>
+<li>Приложение <strong>не читает</strong> вашу переписку, не открывает чужие письма,
+не использует Google Диск, Контакты или YouTube.</li>
+<li>Приложение <strong>не собирает</strong> данные пользователей для рекламы и не продаёт данные третьим лицам.</li>
+</ul>
+
+<h2>Кто разрабатывает</h2>
+<p>Индивидуальный предприниматель / владелец приложения — Аркадий Черновских.
+Связь по вопросам приложения и конфиденциальности:
+<a href="mailto:arkadiy.chernavskikh@gmail.com">arkadiy.chernavskikh@gmail.com</a>.</p>
 
 <div class="card">
-  <p>📄 <a href="privacy.html">Политика конфиденциальности</a></p>
+  <p>📄 <a href="privacy.html">Политика конфиденциальности приложения 1C Invoices</a></p>
 </div>
 
-<p>Контакт: <a href="mailto:arkadiy.chernavskikh@gmail.com">arkadiy.chernavskikh@gmail.com</a></p>
+<div class="footer">
+<p>Приложение не связано с ООО «1С» и не является продуктом 1С. Название «1C Invoices» используется
+для обозначения назначения приложения — подготовки и отправки счетов.</p>
+</div>
 </body>
 </html>
